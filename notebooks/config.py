@@ -1,3 +1,7 @@
+# Tratamiento de textos
+# -----------------------------------------------------------------------
+from collections import Counter
+
 # Tratamiento de datos
 # -----------------------------------------------------------------------
 import pandas as pd
@@ -11,6 +15,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import plotly_express as px
 from IPython.display import display, HTML
+from wordcloud import WordCloud
 
 # Vigilar progreso bucles
 # -----------------------------------------------------------------------
@@ -42,6 +47,10 @@ from sklearn.cluster import SpectralClustering
 
 # NLP / SISTEMAS RECOMENDACION
 # -----------------------------------------------------------------------
+import spacy
+from nltk.corpus import stopwords
+import nltk
+
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -82,6 +91,7 @@ from src.clustering import soporte_sarima as sup_sarimas
 from src.eda import soporte_series_temporales as sup_series_tem
 from src.regresion import soporte_regresion as sup_regre
 from src.recomendacion import soporte_sistemas_recomendacion as sup_reco
+from src.nlp import soporte_nlp as sup_nlp
 
 ##aplicar configuraciones
 #------------------------------------------------------------------------
